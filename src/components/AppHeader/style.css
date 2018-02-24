@@ -1,0 +1,30 @@
+.app-header {
+  padding: 40px 0;
+  height: 80vh;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('img/header-bg.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.app-header:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+  background: rgba(0,150,178, 0.3);
+}
+
+.app-header h1 {
+  background: url('img/legaleagle-2x.png') center center no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  height: 80px;
+  width: 400px;
+  text-indent: -999em
+}

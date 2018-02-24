@@ -14,17 +14,17 @@ class App extends Component {
         <section className="help-me glh-section">
           <div className="container">
             <h2>What can I help you with today?</h2>
-            <div className="columns is-desktop">
-              <div className="column">
+            <div className="columns is-multiline">
+              <div className="column is-half-tablet is-one-quarter-desktop">
                 <CardBox title="Property Law" paragraph={LoremIpsum} link="http://google.com" />
               </div>
-              <div className="column">
+              <div className="column is-half-tablet is-one-quarter-desktop">
                 <CardBox title="Consumer Law" paragraph={LoremIpsum} />
               </div>
-              <div className="column">
+              <div className="column is-half-tablet is-one-quarter-desktop">
                 <CardBox title="Consumer Law" paragraph={LoremIpsum} />
               </div>
-              <div className="column">
+              <div className="column is-half-tablet is-one-quarter-desktop">
                 <CardBox title="Consumer Law" paragraph={LoremIpsum} />
               </div>
             </div>

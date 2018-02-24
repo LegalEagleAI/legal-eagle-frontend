@@ -7,16 +7,18 @@ body {
 .container {
   padding-left: 12px;
   padding-right: 12px;
+  width: 100%;
 }
 
 .glh-section {
-  padding: 42px 0;
+  padding: 36px 0;
   border-bottom: 1px solid #eaeaea;
   background: #f6f9fc;
 }
 
 .glh-section h2 {
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 32px;
   font-weight: 600;
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: -1px;
@@ -24,20 +26,14 @@ body {
   text-align: center;
 }
 
-footer {
-  padding: 42px 0;
-  text-align: center;
-}
+@media (min-width: 769px) {
+  .glh-section {
+    padding: 42px 0;
+  }
 
-footer p {
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #909090;
-  letter-spacing: 1px;
-}
-
-footer .icon-heart {
-  color: red;
+  .glh-section h2 {
+    font-size: 32px;
+  }
 }
 
 .page-header {

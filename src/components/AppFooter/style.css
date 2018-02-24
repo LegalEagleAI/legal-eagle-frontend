@@ -1,0 +1,15 @@
+footer {
+  padding: 42px 0;
+  text-align: center;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #909090;
+  letter-spacing: 1px;
+}
+
+footer .icon-heart {
+  color: red;
+}

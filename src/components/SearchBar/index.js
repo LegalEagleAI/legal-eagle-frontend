@@ -7,10 +7,10 @@ export class SearchBar extends Component {
       <div className="searchActualBar">
         <div class="field has-addons">
           <div class="control">
-            <input class="input" type="text" placeholder="Find a repository" />
+            <input class="input glh-input" type="text" placeholder="Find a repository" />
           </div>
           <div class="search-button">
-            <a class="button is-info">Search</a>
+            <a class="button glh-button">Search</a>
           </div>
         </div>
       </div>

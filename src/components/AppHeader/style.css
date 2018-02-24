@@ -19,8 +19,7 @@
 
 .app-header-homepage {
   padding: 42px 0;
-  height: 60vh;
-  min-height: 520px;
+  min-height: 540px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,16 +35,32 @@
   right: 0;
   bottom: 0;
   content: ' ';
-  background: rgba(0, 150, 178, 0.3);
+  background: rgba(0, 150, 178, 0.5);
 }
 
 .app-header-homepage h1 {
   background: url('img/legaleagle-2x.png') center center no-repeat;
   background-size: contain;
   margin: 0 auto;
-  height: 80px;
-  width: 400px;
+  height: 60px;
+  width: 300px;
   text-indent: -999em;
-  margin: 0 auto;
   float: none;
+}
+
+@media (min-width: 769px) {
+  .app-header-homepage {
+    height: 60vh;
+    min-height: 520px;
+  }
+
+  .app-header-homepage:before {
+    background: rgba(0, 150, 178, 0.3);
+  }
+
+  .app-header-homepage h1 {
+    margin: 200px auto 0;
+    height: 80px;
+    width: 400px;
+  }
 }

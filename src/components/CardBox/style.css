@@ -1,0 +1,26 @@
+.cardbox {
+  padding: 0;
+}
+
+.cardbox-padding {
+  padding: 1.125rem;
+}
+
+.cardbox h3,
+.cardbox a h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #484848;
+}
+
+.cardbox p,
+.cardbox a p {
+  font-size: 14px;
+  color: #808080;
+}
+
+.cardbox a:hover h3 {
+  text-decoration: underline;
+  color: #202020;
+}

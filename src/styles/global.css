@@ -1,0 +1,82 @@
+body {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.glh-section {
+  padding: 42px 0;
+  border-bottom: 1px solid #eaeaea;
+  background: #f6f9fc;
+}
+
+.glh-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+footer {
+  padding: 42px 0;
+  text-align: center;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #909090;
+  letter-spacing: 1px;
+}
+
+footer .icon-heart {
+  color: red;
+}
+
+.page-header {
+  padding: 64px 0 0 0;
+}
+
+.page-header span.section-name {
+  display: block;
+  font-weight: 600;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #969696;
+}
+
+.page-header h2 {
+  font-size: 56px;
+  font-weight: 300;
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', sans-serif;
+  letter-spacing: -2px;
+  line-height: 48px;
+  color: #363636;
+}
+
+.page h3 {
+  font-weight: 700;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-top: 42px;
+  border-top: 4px solid #333;
+  padding-top: 8px;
+  color: #333;
+}
+
+.page p {
+  font: 16px/28px 'Merriweather', 'Georgia', 'Times New Roman', sans-serif;
+  margin-bottom: 24px;
+  color: #505050;
+}

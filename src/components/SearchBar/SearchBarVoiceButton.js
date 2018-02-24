@@ -63,7 +63,7 @@ class SearchBarButton extends Component {
         console.log("Stopped recording, query is: ");
         console.log(this.state.messages);
         // Updates the query in the search box.
-        if (this.state.messages[0] != undefined) {
+        if (this.state.messages[0] !== undefined) {
             this.props.updateQueryCallback(this.state.messages[0]);
         }
         this.setState({submittedQuery: true});

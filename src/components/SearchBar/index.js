@@ -20,7 +20,12 @@ export class SearchBar extends Component {
   }
 
   onClick() {
+    // TODO: Get API result.
     console.log("Todo: Call backend with query = " + this.state.searchText);
+    var result = new SpeechSynthesisUtterance("Results for your query " + this.state.searchText + " are");
+    result.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === 'Alex'; })[0];
+    speechSynthesis.speak(result);
+    // Do we want it to say the results?
   }
   render() {
     return (

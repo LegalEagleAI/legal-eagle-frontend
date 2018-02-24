@@ -26,5 +26,14 @@
   margin: 0 auto;
   height: 80px;
   width: 400px;
-  text-indent: -999em
+  text-indent: -999em;
+}
+
+.searchActualBar {
+  margin: 30px auto 0;
+  width: 600px;
+}
+
+.control {
+  width: 100%;
 }

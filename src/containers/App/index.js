@@ -4,8 +4,8 @@ import { AppHeader } from '../../components/AppHeader'
 class App extends Component {
   render() {
     return (
-      <AppHeader />
-    );
+        <AppHeader />
+      );
   }
 }
 

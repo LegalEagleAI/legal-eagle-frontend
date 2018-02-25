@@ -78,8 +78,14 @@ body {
 }
 
 .page p.body,
-.page .body-copy p {
+.page .body-copy p,
+.page .body-copy ul li {
   font: 16px/28px 'Merriweather', 'Georgia', 'Times New Roman', sans-serif;
   margin-bottom: 24px;
   color: #505050;
+}
+
+.page .body-copy ul li {
+  list-style: disc;
+  margin-left: 25px;
 }

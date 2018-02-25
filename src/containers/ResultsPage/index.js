@@ -18,53 +18,60 @@ class ResultsPage extends Component {
       <div className="view-page">
         <AppHeader />
         <SearchBar />
-        <PageHeader title={this.state.query + ' Definition'} subtitle="Results" />
+        <PageHeader title="Laybutt v Amoco Australia Pty Ltd (1974)" subtitle="Judgement" />
         <section className="page">
           <div className="container">
             <div className="columns">
-              <div className="column is-three-fifths body-copy">
-                <h3>Current Interpretation</h3>
+              <div className="column is-2 body-copy">
+                <h3>Legal Issue</h3>
+                <p>Death of a Contracting Party, Lapse or Rejection of an offer</p>
+              </div>
+              <div className="column body-copy">
+                <h3>Facts</h3>
+                <ul>
+                  <li>
+                    Laybutt owned a piece of land, and he granted an option to Amoco to purchase the
+                    land.
+                  </li>
+                  <li>
+                    On 28th of July 1972 Mr Laybutt died. His widow was the executrix and sole
+                    beneficiary of his estate.
+                  </li>
+                  <li>
+                    On the 23rd of Oct 1972 Amoco served notice of exercise of the option on the
+                    widow and delieved a cheque for the deposit to the solicitors acting for the
+                    estate.
+                  </li>
+                  <li>
+                    The widow’s lawyers argued that the option could not be exercised after the
+                    death of the vendor.
+                  </li>
+                </ul>
+              </div>
+              <div className="column body-copy">
+                <h3>Outcome</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in sem venenatis,
-                  aliquam augue vitae, congue arcu. Curabitur dictum porta diam, et volutpat tellus
-                  varius a. Donec nec leo tincidunt, scelerisque ligula a, varius sem. Phasellus
-                  nisi lorem, tristique eget fringilla at, vulputate sit amet purus. Fusce a
-                  efficitur lectus, in laoreet libero. Mauris pulvinar arcu et vehicula tincidunt.
-                  Ut vitae interdum dui, nec volutpat purus. Aenean venenatis, nunc vel porttitor
-                  tincidunt, metus felis ornare risus, ut auctor est velit vitae massa. Vivamus
-                  massa purus, vulputate non congue aliquam, ornare placerat nunc. Nullam ac mauris
-                  quis purus efficitur volutpat. In egestas viverra tellus in iaculis. Sed porttitor
-                  feugiat euismod.
+                  As a general rule, upon the death of a party to a contract his liabilities
+                  thereunder pass to his personal representatives. The rule does not apply if the
+                  performance of the contract
                 </p>
                 <p>
-                  Aliquam justo nibh, eleifend vel iaculis vel, auctor ut est. In vehicula imperdiet
-                  nisi nec laoreet. Pellentesque fermentum posuere justo rutrum blandit. Mauris at
-                  erat vitae dui finibus iaculis eget vitae augue. In sed nulla facilisis, elementum
-                  mauris eu, condimentum nisl. Aenean condimentum orci nec nibh lacinia, nec viverra
-                  augue congue. In consequat quis nibh sed aliquet.
+                  Amoco still had the right to exercise the option - not withstanding the death of
+                  Mr Laybutt.
                 </p>
-                <h3>Case Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in sem venenatis,
-                  aliquam augue vitae, congue arcu. Curabitur dictum porta diam, et volutpat tellus
-                  varius a. Donec nec leo tincidunt, scelerisque ligula a, varius sem. Phasellus
-                  nisi lorem, tristique eget fringilla at, vulputate sit amet purus. Fusce a
-                  efficitur lectus, in laoreet libero. Mauris pulvinar arcu et vehicula tincidunt.
-                  Ut vitae interdum dui, nec volutpat purus. Aenean venenatis, nunc vel porttitor
-                  tincidunt, metus felis ornare risus, ut auctor est velit vitae massa. Vivamus
-                  massa purus, vulputate non congue aliquam, ornare placerat nunc. Nullam ac mauris
-                  quis purus efficitur volutpat. In egestas viverra tellus in iaculis. Sed porttitor
-                  feugiat euismod.
-                </p>
-                <p>
-                  Aliquam justo nibh, eleifend vel iaculis vel, auctor ut est. In vehicula imperdiet
-                  nisi nec laoreet. Pellentesque fermentum posuere justo rutrum blandit. Mauris at
-                  erat vitae dui finibus iaculis eget vitae augue. In sed nulla facilisis, elementum
-                  mauris eu, condimentum nisl. Aenean condimentum orci nec nibh lacinia, nec viverra
-                  augue congue. In consequat quis nibh sed aliquet.
-                </p>
-
-                <div className="citation" />
+                <p>No binding contract between the appellant and the respondent.</p>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <div className="columns">
+              <div className="column body-copy">
+                <h3>Other Links</h3>
+                <a
+                  className="button"
+                  href="https://www.ato.gov.au/law/view/document?DocID=JUD%2F132CLR57%2F00003">
+                  Read the Judgement
+                </a>
               </div>
             </div>
           </div>

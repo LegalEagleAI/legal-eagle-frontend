@@ -9,28 +9,16 @@ const LoremIpsum =
 
 const PropertyData = {
   title: 'Property Law',
-  popularConcepts: [
-    {
-      title: 'Property Law',
-      paragraph: LoremIpsum,
-      link: 'http://google.com'
-    },
-    {
-      title: 'Consumer Law',
-      paragraph: LoremIpsum,
-      link: 'http://google.com'
-    }
-  ],
   legislation: [
     {
-      title: 'Property Law',
-      paragraph: LoremIpsum,
-      link: 'http://google.com'
+      title: 'Property Law Act 1958',
+      paragraph: 'Victorian law regarding property',
+      link: 'http://www7.austlii.edu.au/cgi-bin/viewdb/au/legis/vic/consol_act/pla1958179/'
     },
     {
-      title: 'Consumer Law',
-      paragraph: LoremIpsum,
-      link: 'http://google.com'
+      title: 'Sale of Land Act 1962',
+      paragraph: 'Victorian law regarding land titles',
+      link: 'http://www7.austlii.edu.au/cgi-bin/viewdb/au/legis/vic/consol_act/sola1962100/'
     }
   ]
 }
@@ -47,11 +35,6 @@ class CategoryPage extends Component {
         <PageHeader title={'Property Law'} subtitle="Category" />
         <section className="page">
           <div className="container">
-            <CardBlock
-              key="popularConcepts"
-              title="Popular Concepts"
-              cards={PropertyData.popularConcepts}
-            />
             <CardBlock key="legislation" title="Legislation" cards={PropertyData.legislation} />
           </div>
         </section>

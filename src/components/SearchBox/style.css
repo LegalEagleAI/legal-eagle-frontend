@@ -1,0 +1,93 @@
+.searchActualBar {
+  width: 100%;
+  margin-top: 0;
+  height: 50px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.searchActualBar.homepage {
+  margin: 30px auto 0;
+  height: 100px;
+}
+
+.searchActualBar.homepage .field.has-addons {
+  display: block;
+}
+
+.searchActualBar .control {
+  width: 100%;
+}
+
+.searchActualBar.homepage .search-button {
+  width: 100%;
+}
+
+.glh-input {
+  font-size: 21px;
+  border: none;
+  height: 50px;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  background: transparent;
+  box-shadow: none;
+}
+
+.glh-input:focus,
+.glh-input:hover {
+  box-shadow: none;
+}
+
+.glh-button {
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #ff9600;
+  background: #ff9600;
+  color: white;
+  width: 100%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 3px;
+}
+
+.glh-button:hover {
+  border-color: #ffa31f;
+  background: #ffa31f;
+  color: white;
+}
+
+.searchActualBar.homepage .glh-button {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 3px;
+}
+
+@media (min-width: 769px) {
+  .searchActualBar.homepage {
+    width: 70%;
+    height: 50px;
+    margin: 30px auto 0;
+  }
+
+  .searchActualBar.homepage .field.has-addons {
+    display: flex;
+  }
+
+  .searchActualBar.homepage .glh-button,
+  .searchActualBar.homepage .search-button {
+    width: auto;
+  }
+
+  .searchActualBar.homepage .glh-button {
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media (min-width: 1216px) {
+  .searchActualBar.homepage {
+    width: 50%;
+  }
+}

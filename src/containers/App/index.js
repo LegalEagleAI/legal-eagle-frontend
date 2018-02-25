@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import HomePage from '../HomePage'
 import ResultsPage from '../ResultsPage'
 
+import { AppFooter } from '../../components/AppFooter'
+
 class App extends Component {
   render() {
     return (
@@ -11,6 +13,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={HomePage} />
           <Route path="/results" component={ResultsPage} />
+          <AppFooter />
         </div>
       </Router>
     )

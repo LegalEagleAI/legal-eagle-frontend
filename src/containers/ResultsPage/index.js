@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
 import { AppHeader } from '../../components/AppHeader'
-import { AppFooter } from '../../components/AppFooter'
-import { CardBox } from '../../components/CardBox'
-
-const LoremIpsum =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum ipsum sit'
+import { SearchBar } from '../../components/SearchBar'
 
 class App extends Component {
   render() {
     return (
       <div className="view-page">
         <AppHeader />
+        <SearchBar />
         <section className="page-header">
           <div className="container">
             <span className="section-name">Results</span>
@@ -67,7 +64,6 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <AppFooter />
       </div>
     )
   }

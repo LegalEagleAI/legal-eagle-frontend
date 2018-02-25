@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { AppHeader } from '../../components/AppHeader'
-import { AppFooter } from '../../components/AppFooter'
 import { CardBox } from '../../components/CardBox'
 
 const LoremIpsum =
@@ -30,7 +29,6 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <AppFooter />
       </div>
     )
   }

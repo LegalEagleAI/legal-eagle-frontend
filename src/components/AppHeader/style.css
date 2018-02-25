@@ -7,19 +7,16 @@
 }
 
 .app-header h1 {
+  float: left;
+}
+
+.app-header h1 a {
   background: url('img/legaleagle-2x.png') center center no-repeat;
   background-size: contain;
   height: 30px;
   width: 150px;
   text-indent: -999em;
-  float: left;
-}
-
-.searchbar {
-  border-bottom: 1px solid #eaeaea;
-  background: #f6f9fc;
-  position: relative;
-  padding: 12px 0;
+  display: block;
 }
 
 /* App Header Homepage */
@@ -46,29 +43,27 @@
 }
 
 .app-header-homepage h1 {
+  float: none;
+}
+
+.app-header-homepage h1 a {
   background: url('img/legaleagle-2x.png') center center no-repeat;
   background-size: contain;
   margin: 0 auto;
   height: 60px;
   width: 300px;
   text-indent: -999em;
-  float: none;
 }
 
 @media (min-width: 769px) {
   .app-header {
     height: 100px;
-    background: rgb(0, 150, 178);
     padding: 30px 0;
   }
 
-  .app-header h1 {
-    background: url('img/legaleagle-2x.png') center center no-repeat;
-    background-size: contain;
+  .app-header h1 a {
     height: 40px;
     width: 200px;
-    text-indent: -999em;
-    float: left;
   }
 
   .app-header-homepage {
@@ -80,7 +75,7 @@
     background: rgba(0, 150, 178, 0.3);
   }
 
-  .app-header-homepage h1 {
+  .app-header-homepage h1 a {
     margin: 200px auto 0;
     height: 80px;
     width: 400px;

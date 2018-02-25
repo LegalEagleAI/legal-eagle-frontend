@@ -7,10 +7,10 @@ export const AppFooter = () => {
       <div className="container">
         <p>&copy; LegalEagle AI</p>
         <p>
-          Built with{' '}
-          <span class="icon is-small icon-heart">
-            <i class="fas fa-heart" />
-          </span>{' '}
+          Built with
+          <span className="icon is-small icon-heart">
+            <i className="fas fa-heart" />
+          </span>
           from Melbourne
         </p>
       </div>

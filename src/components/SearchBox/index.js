@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SearchBarVoiceButton from './SearchBarVoiceButton.js'
+import SearchBarVoiceButton from './SearchBarVoiceButton'
 
 import './style.css'
 
@@ -37,42 +37,28 @@ export class SearchBox extends Component {
     const { homepage } = this.props
     const className = homepage ? 'searchActualBar homepage' : 'searchActualBar'
     return (
-      <div className="searchActualBar">
-        <div class="field has-addons">
-          <div class="control">
+      <form className={className} method="GET" action="/Results">
+        <div className="field has-addons">
+          <div className="control">
             <input
-              class="input glh-input"
+              name="q"
+              className="input glh-input"
               type="text"
               placeholder="Make a query"
               value={this.state.searchText}
               onChange={this.onChange}
             />
           </div>
-          <div class="search-button">
-            <a class="button glh-button" onClick={this.onClick}>
-              Search
-            </a>
+          <div className="search-button">
+            <SearchBarVoiceButton
+              submittedQuery={false}
+              searchText={this.state.searchText}
+              updateQueryCallback={query => this.setState({ searchText: query })}
+            />
+            <input type="submit" className="button glh-button glh-button-end" value="Search" />
           </div>
-          <SearchBarVoiceButton
-            submittedQuery={false}
-            searchText={this.state.searchText}
-            updateQueryCallback={query => this.setState({ searchText: query })}
-          />
         </div>
-      </div>
+      </form>
     )
-
-    // return (
-    //   <form className={className} method="GET" action="/Results">
-    //     <div class="field has-addons">
-    //       <div class="control">
-    //         <input class="input glh-input" type="text" placeholder="Find a repository" />
-    //       </div>
-    //       <div class="search-button">
-    //         <input type="submit" className="button glh-button" value="Search" />
-    //       </div>
-    //     </div>
-    //   </form>
-    // )
   }
 }

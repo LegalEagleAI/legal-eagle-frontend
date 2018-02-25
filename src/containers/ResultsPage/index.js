@@ -2,7 +2,16 @@ import React, { Component } from 'react'
 import { AppHeader } from '../../components/AppHeader'
 import { SearchBar } from '../../components/SearchBar'
 
-class App extends Component {
+class ResultsPage extends Component {
+  constructor(props) {
+    super(props)
+    const searchParams = new URLSearchParams(this.props.location.search)
+    if (searchParams.has('q')) {
+      this.state = { query: searchParams.get('q') }
+    } else {
+      this.state = { query: null }
+    }
+  }
   render() {
     return (
       <div className="view-page">
@@ -11,7 +20,7 @@ class App extends Component {
         <section className="page-header">
           <div className="container">
             <span className="section-name">Results</span>
-            <h2>Headline</h2>
+            <h2>Definition: {this.state.query}</h2>
           </div>
         </section>
         <section className="page">
@@ -69,4 +78,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default ResultsPage

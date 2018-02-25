@@ -15,7 +15,7 @@ class App extends Component {
             <h2>What can I help you with today?</h2>
             <div className="columns is-multiline">
               <div className="column is-half-tablet is-one-quarter-desktop">
-                <CardBox title="Property Law" paragraph={LoremIpsum} link="http://google.com" />
+                <CardBox title="Property Law" paragraph={LoremIpsum} link="/category/property" />
               </div>
               <div className="column is-half-tablet is-one-quarter-desktop">
                 <CardBox title="Consumer Law" paragraph={LoremIpsum} />

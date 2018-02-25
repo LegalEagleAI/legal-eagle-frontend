@@ -4,8 +4,8 @@ import './style.css'
 export const CardBox = ({ title, paragraph, link, ...props }) => {
   const children = (
     <div className="cardbox-padding">
-      <h3>{title}</h3>
-      <p>{paragraph}</p>
+      <h3 className="cardbox-title">{title}</h3>
+      <p className="cardbox-para">{paragraph}</p>
     </div>
   )
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { AppHeader } from '../../components/AppHeader'
+import { PageHeader } from '../../components/PageHeader'
 import { SearchBar } from '../../components/SearchBar'
 
 class ResultsPage extends Component {
@@ -17,12 +18,7 @@ class ResultsPage extends Component {
       <div className="view-page">
         <AppHeader />
         <SearchBar />
-        <section className="page-header">
-          <div className="container">
-            <span className="section-name">Results</span>
-            <h2>Definition: {this.state.query}</h2>
-          </div>
-        </section>
+        <PageHeader title={this.state.query + ' Definition'} subtitle="Results" />
         <section className="page">
           <div className="container">
             <div className="columns">

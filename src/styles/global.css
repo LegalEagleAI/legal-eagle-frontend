@@ -59,7 +59,12 @@ body {
   color: #363636;
 }
 
-.page h3 {
+.page {
+  padding-bottom: 54px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page h3.section-title {
   font-weight: 700;
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   font-size: 15px;
@@ -71,7 +76,7 @@ body {
   color: #ff9600;
 }
 
-.page p {
+.page p.body {
   font: 16px/28px 'Merriweather', 'Georgia', 'Times New Roman', sans-serif;
   margin-bottom: 24px;
   color: #505050;

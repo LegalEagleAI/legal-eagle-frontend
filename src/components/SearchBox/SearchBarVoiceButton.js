@@ -6,14 +6,22 @@ class SearchBarButton extends Component {
   constructor(props) {
     super(props)
     this.onClick = this.onClick.bind(this)
-    this.recognition = new window.webkitSpeechRecognition()
-    const speechRecognitionList = new window.webkitSpeechGrammarList()
-    const grammar = '#JSGF V1.0; grammar names; public <name> = david ;'
-    speechRecognitionList.addFromString(grammar, 1)
-    this.recognition.grammars = speechRecognitionList
-    console.log(this.recognition.grammars)
+
+    let canUseFeature = false
+    if (!window.hasOwnProperty('webkitSpeechRecognition')) {
+      console.log('Unable to use the Speech Recognition API')
+    } else {
+      this.recognition = new window.webkitSpeechRecognition()
+      canUseFeature = true
+      const speechRecognitionList = new window.webkitSpeechGrammarList()
+      const grammar = '#JSGF V1.0; grammar names; public <name> = david ;'
+      speechRecognitionList.addFromString(grammar, 1)
+      this.recognition.grammars = speechRecognitionList
+      // console.log(this.recognition.grammars)
+    }
 
     this.state = {
+      canUseFeature,
       submittedQuery: false,
       messages: [],
       recording: false
@@ -91,10 +99,13 @@ class SearchBarButton extends Component {
     }
   }
   render() {
+    const { canUseFeature } = this.state
     return (
-      <a className="button glh-button glh-button-voice" onClick={this.onClick}>
-        {this.getIcon()}
-      </a>
+      canUseFeature && (
+        <a className="button glh-button glh-button-voice" onClick={this.onClick}>
+          {this.getIcon()}
+        </a>
+      )
     )
   }
 }

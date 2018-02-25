@@ -22,7 +22,7 @@ class ResultsPage extends Component {
         <section className="page">
           <div className="container">
             <div className="columns">
-              <div className="column is-three-fifths">
+              <div className="column is-three-fifths body-copy">
                 <h3>Current Interpretation</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in sem venenatis,
